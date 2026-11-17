@@ -1,0 +1,16 @@
+---
+// El proxy de Next reescribía /productos/atún a /productos/atun.
+// En Astro estático se resuelve con una redirección del lado del cliente.
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="refresh" content="0;url=/productos/atun" />
+    <title>Redirigiendo…</title>
+  </head>
+  <body>
+    <p><a href="/productos/atun">Ir a /productos/atun</a></p>
+  </body>
+</html>
