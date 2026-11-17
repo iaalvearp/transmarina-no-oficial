@@ -1,0 +1,34 @@
+---
+import BrandMark from './BrandMark.astro'
+import Icon from './Icon.astro'
+
+const year = new Date().getFullYear()
+---
+
+<footer class="site-footer">
+  <div class="footer-main">
+    <div class="footer-brand-block">
+      <a class="brand brand-light" href="/">
+        <BrandMark />
+        <span class="brand-word">transmarina<span>®</span></span>
+      </a>
+      <p>Productos del mar con origen, precisión y compromiso con el futuro.</p>
+    </div>
+    <div class="footer-column">
+      <span class="footer-label">Explorar</span>
+      <a href="/#nosotros">Nosotros</a>
+      <a href="/productos/atun">Atún ultra congelado</a>
+      <a href="/content/certificaciones">Certificaciones</a>
+    </div>
+    <div class="footer-column footer-location">
+      <span class="footer-label">Nuestro origen</span>
+      <span>Manabí · Ecuador</span>
+      <span>Océano Pacífico</span>
+      <a href="https://transmarina.com" target="_blank" rel="noreferrer">Visitar transmarina.com <Icon name="arrow-up-right" size={14} /></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© {year} Transmarina. Todos los derechos reservados.</span>
+    <span>Del Pacífico, con propósito.</span>
+  </div>
+</footer>

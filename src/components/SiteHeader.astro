@@ -1,0 +1,36 @@
+---
+import BrandMark from './BrandMark.astro'
+import Icon from './Icon.astro'
+---
+
+<header class="site-header">
+  <div class="topline">
+    <div class="topline-inner">
+      <span>MANABÍ, ECUADOR <i aria-hidden="true">·</i> PACÍFICO SUR</span>
+      <span class="topline-note">Tecnología y sostenibilidad garantizada</span>
+    </div>
+  </div>
+  <div class="nav-wrap">
+    <a class="brand" href="/" aria-label="Transmarina, página de inicio">
+      <BrandMark />
+      <span class="brand-word">transmarina<span>®</span></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Navegación principal">
+      <a href="/#nosotros">Nosotros</a>
+      <a href="/productos/atun">Productos</a>
+      <a href="/content/certificaciones">Certificaciones</a>
+    </nav>
+    <a class="nav-contact" href="https://transmarina.com" target="_blank" rel="noreferrer">
+      Contacto <Icon name="arrow-up-right" size={15} />
+    </a>
+    <details class="mobile-nav">
+      <summary aria-label="Abrir menú de navegación"><span></span><span></span></summary>
+      <nav aria-label="Navegación móvil">
+        <a href="/#nosotros">Nosotros</a>
+        <a href="/productos/atun">Productos</a>
+        <a href="/content/certificaciones">Certificaciones</a>
+        <a href="https://transmarina.com" target="_blank" rel="noreferrer">Contacto</a>
+      </nav>
+    </details>
+  </div>
+</header>

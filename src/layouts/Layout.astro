@@ -1,0 +1,33 @@
+---
+import '../styles/global.css'
+
+interface Props {
+  title?: string
+  description?: string
+}
+
+const {
+  title = 'Transmarina | Del Pacífico a las mesas del mundo',
+  description = 'Atún ultra congelado de Manabí, Ecuador. Calidad sashimi, tecnología y compromiso con el futuro del océano.',
+} = Astro.props
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="generator" content="v0.app" />
+    <meta name="color-scheme" content="light" />
+    <meta name="theme-color" content="#f4f2ec" />
+    <link rel="icon" href="/icon-light-32x32.png" media="(prefers-color-scheme: light)" />
+    <link rel="icon" href="/icon-dark-32x32.png" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-icon.png" />
+  </head>
+  <body class="antialiased">
+    <slot />
+  </body>
+</html>

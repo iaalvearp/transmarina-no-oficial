@@ -104,7 +104,7 @@
 .origin-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--sea); }
 .origin-rule { width: 28px; height: 1px; margin-left: 5px; background: #c7c9c2; }
 .hero-image-wrap { min-height: 570px; position: relative; overflow: hidden; background: var(--ink); }
-.hero-image { object-fit: cover; object-position: 63% center; }
+.hero-image { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 63% center; }
 .image-vignette { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(16, 42, 53, 0.21), transparent 46%), linear-gradient(0deg, rgba(8, 28, 37, 0.5), transparent 28%); }
 .hero-image-caption { position: absolute; right: 34px; bottom: 30px; left: 34px; display: flex; justify-content: space-between; color: rgba(255, 255, 255, 0.8); font-size: 8px; letter-spacing: 0.18em; }
 .hero-vertical { position: absolute; top: 50%; right: 15px; color: rgba(255, 255, 255, 0.68); font-size: 8px; letter-spacing: 0.21em; writing-mode: vertical-rl; transform: translateY(-50%); }
@@ -135,7 +135,7 @@
 
 .product-feature { display: grid; grid-template-columns: 1.03fr 0.97fr; min-height: 630px; background: var(--ink-deep); color: var(--paper-light); }
 .product-feature-image { min-height: 570px; position: relative; overflow: hidden; background: #253840; }
-.product-feature-image img { object-fit: cover; object-position: center; }
+.product-feature-image img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .product-feature-image::after { content: ''; position: absolute; inset: 50% 0 0; background: linear-gradient(0deg, rgba(12, 32, 39, 0.52), transparent); }
 .image-tag { position: absolute; z-index: 1; bottom: 30px; left: 32px; padding: 11px 14px; border: 1px solid rgba(255,255,255,.52); color: white; font-size: 8px; letter-spacing: .16em; }
 .product-feature-copy { padding: 92px clamp(38px, 8vw, 122px); align-self: center; }
@@ -168,7 +168,7 @@
 .page-hero-copy h1 { font-size: clamp(66px, 7.6vw, 100px); }
 .page-lead { max-width: 385px; margin: 24px 0 24px; color: #64747a; font-size: 13px; line-height: 1.8; }
 .page-hero-photo { min-height: 600px; position: relative; overflow: hidden; background: #152e38; }
-.page-hero-photo > img { object-fit: cover; }
+.page-hero-photo > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .page-hero-photo::after { position: absolute; content: ''; inset: 45% 0 0; background: linear-gradient(0deg, rgba(12, 32, 39, .46), transparent); }
 .photo-stamp { position: absolute; z-index: 1; top: 28px; left: 28px; width: 80px; height: 80px; border: 1px solid rgba(255,255,255,.66); border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; color: #fff; text-align: center; }
 .photo-stamp span { font-size: 7px; letter-spacing: .13em; line-height: 1.4; }
